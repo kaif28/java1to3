@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bcs</title>
+		<style type="text/css">
+			.navigation a {
+			color:black;
+			text-decoration: none;
+			padding: 5px;
+			float: right;
+			margin-right: 5px;
+			font-family: arial,sans-serif;
+			font-size:24px; 
+			}
+			.image_1 img{
+				width: 300px;
+				height:300px;
+				padding: 5px;
+				stroke-color: 1px;
+			}
+			.popup{
+		    width: 900px;
+		    margin: auto;
+		    text-align: center
+			}
+			.popup img{
+		    width: 200px;
+		    height: 200px;
+		    cursor: pointer
+			}
+			.show{
+		    z-index: 999;
+		    display: none;
+			}
+			.show .overlay{
+		    width: 100%;
+		    height: 100%;
+		    background: rgba(0,0,0,.66);
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		}
+		.show .img-show{
+		    width: 600px;
+		    height: 400px;
+		    background: #FFF;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%,-50%);
+		    overflow: hidden
+		}
+		.img-show span{
+		    position: absolute;
+		    top: 10px;
+		    right: 10px;
+		    z-index: 99;
+		    cursor: pointer;
+		}
+		.img-show img{
+		    width: 100%;
+		    height: 100%;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		}
+			.image_ img{
+				width: 300px;
+				height:300px;
+				padding: 5px;
+				stroke-color: 1px;
+			}
+			.image_2 img{
+				width: 300px;
+				height:300px;
+				padding: 5px;
+				stroke-color: 1px;
+			}
+			.image_3 img{
+				width: 300px;
+				height:300px;
+				padding: 5px;
+				stroke-color: 1px;
+			}
+		</style>
+
+	</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(function () {
+    "use strict";
+    
+    $(".image_1 img").click(function () {
+        var $src = $(this).attr("src");
+        $(".show").fadeIn();
+        $(".img-show img").attr("src", $src);
+    });
+    
+    $("span, .overlay").click(function () {
+        $(".show").fadeOut();
+    });
+    
+});
+</script>
+<script> 
+$(function () {
+    "use strict";
+    
+    $(".image_2 img").click(function () {
+        var $src = $(this).attr("src");
+        $(".show").fadeIn();
+        $(".img-show img").attr("src", $src);
+    });
+    
+    $("span, .overlay").click(function () {
+        $(".show").fadeOut();
+    });
+    
+});
+</script>
+<script> 
+$(function () {
+    "use strict";
+    
+    $(".image_3 img").click(function () {
+        var $src = $(this).attr("src");
+        $(".show").fadeIn();
+        $(".img-show img").attr("src", $src);
+    });
+    
+    $("span, .overlay").click(function () {
+        $(".show").fadeOut();
+    });
+    
+});
+</script>
+	<div class="header">
+		<div class="navigation">
+			<a href="home.html" target="_self">Home</a><a href="roipe hoist.html" target="_self">Roipe hoist</a><a href="endcarriages.html" target="_self">End Carriages</a><a href="gallary.html" target="_self">Gallary</a>
+		</div>
+		<div class="logo">
+			<img src="C:\kaif-web\images\bcp-balkencarpodem-cranes.jpg">
+		</div>
+		<div class="h2">
+			<h2>See some of our BCP Cranes, Hoists and End Carriages in action</h2>
+		</div>
+		<div class="image_1">
+			<img src="C:\kaif-web\images\top-running-bcp-hoist.jpg">
+			<img src="C:\kaif-web\images\bcp-low_headroom-hoist.jpg">
+			<img src="C:\kaif-web\images\3-phase-wire-rope-crane-hoist.jpg">
+			<img src="C:\kaif-web\images\articulated-traveling-hoist.jpg">
+		</div>
+			<div class="image_2">
+			<img src="C:\kaif-web\images\mh-rope-hoist.jpg">
+			<img src="C:\kaif-web\images\foot-mounted-rope-hoist.jpg">
+			<img src="C:\kaif-web\images\bcp-crane-hoist.jpg">
+			<img src="C:\kaif-web\images\stationary-rope-hoist.jpg">
+		</div>
+			<div class="image_3">
+			<img src="C:\kaif-web\images\warehouse-cranes.jpg">
+			<img src="C:\kaif-web\images\low-headroom-rope-hoist.jpg">
+			<img src="C:\kaif-web\images\conical-braked-hoist.jpg">
+			<img src="C:\kaif-web\images\stationary-rope-hoist.jpg">
+		</div>
+			<div class="show">
+	  		<div class="overlay"></div>
+	  		<div class="img-show">
+	    	<span>X</span>
+	    	<img src="">
+  		</div>
+	</div>
+</html>
